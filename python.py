@@ -105,3 +105,51 @@ print(len(height))
 print(len(name))
 print(len(are_you_a_student))
 print(len(student_debt))
+
+# working with strings
+password = input("enter password: ")
+
+if len(password) < 8:
+    print("Ensure atleast password is atleast 8 character")
+else:
+    print(password)
+
+paragraph = """
+Python is easy to learn.
+Python is powerful.
+Many people love Python
+"""
+
+print(paragraph.count("Python"))
+
+
+# generate
+phone = "174-3857-09"
+
+print(phone.replace("-",""))
+
+phone_b = []
+for i in phone:
+    if  i == '-':
+        continue
+    else:
+        phone_b.append(i)
+        
+phone = "174385709"
+
+reversed_phone = ""
+for char in phone:
+    reversed_phone = char + reversed_phone
+
+print(reversed_phone)
+
+## python
+
+word = "object has no attribute"
+
+print(word[:-1])
+print(word[-1:])
+len(word)
+
+print(word.find("no"))
+
