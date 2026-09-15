@@ -194,3 +194,12 @@ reason = """Random country and city that came first inside thy brain"""
 print(country)
 print(city)
 print(reason)
+
+# converting to string
+
+cost = 1500000
+mileage = 24000
+
+message = f"the price of an imported AT with {mileage} km to Kenya is ksh {cost}"
+
+print(message)
