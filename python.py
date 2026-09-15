@@ -203,3 +203,13 @@ mileage = 24000
 message = f"the price of an imported AT with {mileage} km to Kenya is ksh {cost}"
 
 print(message)
+
+
+#booleans
+
+profit = 200
+
+print(profit > 110)
+print(profit < 90)
+print(profit >= 1000)
+print(profit <= 290)
