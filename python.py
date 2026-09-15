@@ -153,3 +153,44 @@ len(word)
 
 print(word.find("no"))
 
+last_name = "Doe"
+school = "Masinde Muliro University of Science and Technology"
+
+print(last_name)
+print(school)
+
+score = -45
+print(score)
+
+#basic maath operations
+#addition
+total = 10 + 5
+print(total)
+change =  10 -  5
+print(change)
+
+#multiplication and division
+area =  6 * 4
+print(area)
+quarter = 6 / 4
+print(quarter)
+
+# power 
+squared = 6 ** 2
+print(squared)
+
+#integer and float division
+float_result = 10/ 3
+print(float_result)
+round_result = 10 // 3
+print(round_result)
+
+# strings
+country = "Mongolia"
+city = 'Cape Verde'
+
+reason = """Random country and city that came first inside thy brain"""
+
+print(country)
+print(city)
+print(reason)
