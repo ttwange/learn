@@ -224,3 +224,13 @@ if mileage < 15000 and cost < 1600000:
     print("Greate deal")
 else:
     print("Continue with the search")
+    
+def check_user(user):
+    if user is not None:
+        if user.get("active"):
+            return "OK"
+    return "Invalid"
+
+ek = "ek99"
+status = "employee" if ek == "ek99" else "not an employee"
+status
