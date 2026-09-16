@@ -213,3 +213,14 @@ print(profit > 110)
 print(profit < 90)
 print(profit >= 1000)
 print(profit <= 290)
+
+
+
+print(message.title())  
+
+# control flow
+
+if mileage < 15000 and cost < 1600000:
+    print("Greate deal")
+else:
+    print("Continue with the search")
