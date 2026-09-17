@@ -289,3 +289,17 @@ lat, lon = point        # unpacking — very common in real code
 point[0] = 10        # TypeError: 'tuple' object does not support item assignment
 point.append(5)      # AttributeError: 'tuple' object has no attribute 'append'
 
+#functions
+
+def events(event):
+    print(f"Tomorrow's event is {event}")
+    
+events("Olympics")
+
+def add_item(item, list=None):
+    if list is None:
+        list = []
+    list.append(item)
+    return list
+add_item(["ke","tz"])
+add_item(["ug"])
