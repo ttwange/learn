@@ -234,3 +234,58 @@ def check_user(user):
 ek = "ek99"
 status = "employee" if ek == "ek99" else "not an employee"
 status
+
+statement = "We just posted a new course from Andrew Brown on the"
+
+for index, i in enumerate(statement):
+    if i =='p':
+        print(index, i)
+        continue
+    elif i == 'e':
+        print(index,i)
+        continue
+    
+
+for num in range(10):
+    if num == 5:
+        break
+    if num % 2 == 0:
+        continue     # skip rest of this iteration, go to next num
+    print(num)       # only odd numbers less than 5: 1, 3
+    
+    
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+    
+it will print 0,1,2,3,4 for range(5)
+it will only print i if its not equal to 3. where if we get 3 it will move to the next iter and print the number as long as its not 3.
+
+fruits = ["apple", "banana"]
+
+fruits.append("cherry")     # add to end -> O(1)
+fruits.insert(0, "mango")   # add at position -> O(n), shifts everything right
+fruits.remove("mango")     # remove by value -> O(n), searches first
+popped = fruits.pop()       # remove & return last item -> O(1)
+print(fruits[1:3])          # slicing -> new list, doesn't mutate original
+
+
+words = ["apple", "banana", "apple", "cherry", "banana", "apple"]
+counts = {}
+
+for word in words:
+    counts[word] = counts.get(word, 0) + 1   # get returns 0 if not seen yet
+
+print(counts)   # {"apple": 3, "banana": 2, "cherry": 1}
+
+
+point = (36.8219, -1.2921)
+
+print(point[0])        # 36.8219 -> indexing works, same as lists
+print(point[-1])       # -1.2921 -> negative indexing works too
+lat, lon = point        # unpacking — very common in real code
+
+point[0] = 10        # TypeError: 'tuple' object does not support item assignment
+point.append(5)      # AttributeError: 'tuple' object has no attribute 'append'
+
